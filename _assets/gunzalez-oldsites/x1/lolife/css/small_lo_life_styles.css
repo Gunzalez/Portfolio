@@ -1,0 +1,7 @@
+#closer { position:absolute; top:383px; left:453px; z-index: 2; }
+#main { position:absolute; top:82px; left:125px; z-index: 3; }
+#header { position:absolute; top:35px; left:178px; z-index: 3; }
+#header2 { position:absolute; top:35px; left:168px; z-index: 3; }
+#navbar { position:absolute; top:389px; left:248px; z-index: 5; }
+#brandnavbar { position:absolute; top:389px; left:238px; z-index: 6; }
+#printnavbar { position:absolute; top:389px; left:262px; z-index: 7; }

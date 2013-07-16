@@ -1,0 +1,95 @@
+/* CSS Document */
+
+body {
+	margin: 0;
+	padding: 0;
+	background: url(../images/bg.jpg) 0 0;
+	color: #fff;
+}
+
+#projects {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.left-col,
+.right-col {
+	width: 50%;
+	float: left;
+}
+
+#projects .col {
+	width: 50%;
+	float: left;
+}
+
+.project {
+	float: left;
+	width: 100%;	
+}
+
+.project img {
+	width: 100%;
+	display: block;
+	border: none;
+}
+
+.project > a {
+	display: block;
+}
+
+.project .data {
+	display: none;
+}
+
+
+
+
+
+
+ 
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+	#projects {
+		width: 320px;
+	}
+}
+ 
+ 
+/* Desktops and laptops ----------- */
+@media only screen
+and (max-width : 980px) {
+/* Styles */
+	.left-col,
+	.right-col {
+		width: 100%;
+	}
+	
+	#projects .col {
+		width: 50%;
+	}
+}
+ 
+/* Desktops and laptops ----------- */
+@media only screen
+and (max-width : 480px) {
+/* Styles */	
+	#projects .col {
+		width: 100%;
+	}
+}
+ 
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1920px) {
+	#projects {
+		width: 1920px;
+	}
+}
+
+
+/* sk */
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }

@@ -1,0 +1,70 @@
+/* Template */
+/* ************************************************************** */			
+.notused {  	font-family: Verdana, Arial, Courier, helvetica-Black-SemiBold, "Comic Sans MS"; 
+				font-size: 11pt; 
+				font-style: normal; 
+				line-height: normal; 
+				font-weight: bold; 
+				font-variant: normal;
+				/* input fields */
+				height: 18px;
+				width: 230pt;
+				/* input fields */				
+				text-decoration: underline	}
+/* ************************************************************** */				
+								
+/* Style sheet for text of main content */
+/* ************************************************************** */
+td 				{  		font-family: Verdana, Arial, Courier, helvetica-Black-SemiBold, "Comic Sans MS"; 
+						font-size: 11px; 
+						font-style: normal; 
+						font-weight: normal; 
+						color: #373737	}
+						
+.tdblue 		{  		font-family: Verdana, Arial, Courier, helvetica-Black-SemiBold, "Comic Sans MS"; 
+						font-size: 12px; 
+						font-style: normal; 
+						font-weight: bold; 
+						color: #006699	}
+						
+.notes 			{  		font-family: Verdana, Arial, Courier, helvetica-Black-SemiBold, "Comic Sans MS"; 
+						font-size: 11px; 
+						font-style: normal; 
+						font-weight: normal; 
+						color: #b5b5b5	} 
+						
+p 				{  		font-family: Verdana, Arial, Courier, helvetica-Black-SemiBold, "Comic Sans MS"; 
+						font-size: 11px; 
+						font-style: normal; 
+						font-weight: normal;
+						color: #373737	}					
+/* ************************************************************** */					
+	
+/* Style for links within page */
+/* ************************************************************** */			
+.reglink		{ 	font-family : Verdana, Arial, Courier, helvetica-Black-SemiBold, "Comic Sans MS";
+					color : #8a8a8a;
+					text-decoration : none;
+					font-weight: normal;
+					font-size : 11px;	}					
+a.reglink:hover { 	color : #373737;
+					text-decoration: underline	}
+					
+.otherlink		{ 	font-family : Verdana, Arial, Courier, helvetica-Black-SemiBold, "Comic Sans MS";
+					color : #dcdcdc;
+					text-decoration : none;
+					font-weight: normal;
+					font-size : 11px;	}					
+a.otherlink:hover { color: #FFFFFF; 
+					text-decoration: underline	}						
+/* ************************************************************** */	
+
+/* Special styles to control element on pages */
+/* ************************************************************** */
+.date 		{  	font-family: Verdana, Arial, Courier, helvetica-Black-SemiBold, "Comic Sans MS";
+				font-size: 11px; 
+				font-style: normal; 
+				font-weight: normal; 
+				color: #FFFFFF	}
+/* ************************************************************** */
+

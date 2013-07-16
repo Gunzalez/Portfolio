@@ -1,0 +1,172 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>ZTL: Zion Technology Ltd_____________________________________________________________________________________________________________</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="author" content="Gunzalez" />
+<meta name="date" content="October 2001, real late GMT" />
+<meta name="Keywords" content="Gunzalez" />
+<meta name="Description" content="Gunzalez's Online CV" />
+
+<script language="Javascript" type="text/javascript">
+<!--
+// begin absolutely positioned scrollable area object scripts 
+// Extension developed by David G. Miles 
+// Original Scrollable Area code developed by Thomas Brattli 
+function verifyCompatibleBrowser(){ 
+    this.ver=navigator.appVersion 
+    this.dom=document.getElementById?1:0 
+    this.ie5=(this.ver.indexOf("MSIE 5")>-1 && this.dom)?1:0; 
+    this.ie4=(document.all && !this.dom)?1:0; 
+    this.ns5=(this.dom && parseInt(this.ver) >= 5) ?1:0; 
+ 
+    this.ns4=(document.layers && !this.dom)?1:0; 
+    this.bw=(this.ie5 || this.ie4 || this.ns4 || this.ns5) 
+    return this 
+} 
+bw=new verifyCompatibleBrowser() 
+ 
+ 
+var speed=50 
+ 
+var loop, timer 
+ 
+function ConstructObject(obj,nest){ 
+    nest=(!nest) ? '':'document.'+nest+'.' 
+    this.el=bw.dom?document.getElementById(obj):bw.ie4?document.all[obj]:bw.ns4?eval(nest+'document.'+obj):0; 
+    this.css=bw.dom?document.getElementById(obj).style:bw.ie4?document.all[obj].style:bw.ns4?eval(nest+'document.'+obj):0; 
+    this.scrollHeight=bw.ns4?this.css.document.height:this.el.offsetHeight 
+    this.clipHeight=bw.ns4?this.css.clip.height:this.el.offsetHeight 
+    this.up=MoveAreaUp;this.down=MoveAreaDown; 
+    this.MoveArea=MoveArea; this.x; this.y; 
+    this.obj = obj + "Object" 
+    eval(this.obj + "=this") 
+    return this 
+} 
+function MoveArea(x,y){ 
+    this.x=x;this.y=y 
+    this.css.left=this.x 
+    this.css.top=this.y 
+} 
+ 
+function MoveAreaDown(move){ 
+	if(this.y>-this.scrollHeight+objContainer.clipHeight){ 
+    this.MoveArea(0,this.y-move) 
+    if(loop) setTimeout(this.obj+".down("+move+")",speed) 
+	} 
+} 
+function MoveAreaUp(move){ 
+	if(this.y<0){ 
+    this.MoveArea(0,this.y-move) 
+    if(loop) setTimeout(this.obj+".up("+move+")",speed) 
+	} 
+} 
+ 
+function PerformScroll(speed){ 
+	if(initialised){ 
+		loop=true; 
+		if(speed>0) objScroller.down(speed) 
+		else objScroller.up(speed) 
+	} 
+} 
+ 
+function CeaseScroll(){ 
+    loop=false 
+    if(timer) clearTimeout(timer) 
+} 
+var initialised; 
+function InitialiseScrollableArea(){ 
+    objContainer=new ConstructObject('divContainer') 
+    objScroller=new ConstructObject('divContent','divContainer') 
+    objScroller.MoveArea(0,0) 
+    objContainer.css.visibility='visible' 
+    initialised=true; 
+} 
+// end absolutely positioned scrollable area object scripts -->
+</script>
+
+<script language="JavaScript" src="js/browser_check.js" type="text/javascript"></script>
+
+<!-- linked .css files //-->
+<link rel="stylesheet" type="text/css" href="css/smallwindow_style.css">
+
+<!-- .css for this page //-->	
+<style type="text/css">  
+#divUpControl{position:absolute; width:260; left:19; top:190; z-index:1; text-align: right} 
+#divDownControl{position:absolute; width:260; left:19; top:316; z-index:1; text-align: right} 
+#divContainer{position:absolute; width:260; height:92; overflow:hidden; top:218; left:19; clip:rect(0,260,92,0); visibility:hidden} 
+#divContent{position:absolute; top:0; left:0}
+</style>
+
+<script language="JavaScript" type="text/javascript">
+<!--
+var mainWin
+function luanchandshut(whatever)
+{
+	mainWin = window.open(whatever);
+	self.close();	
+}
+//-->
+</script>
+
+</head>
+<body background="media3/smallwindow_background.gif" bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onLoad="InitialiseScrollableArea()">
+
+<!-- begin absolutely positioned scrollable area object-->
+<div id="divUpControl"><a href="javascript:;" onMouseOver="PerformScroll(-7)" onMouseOut="CeaseScroll()"><img src="media/spacer_trans.gif" width="260" height="20" alt="" border="0" vspace="0" hspace="0"></a></div>
+<div id="divDownControl"><a href="javascript:;" onMouseOver="PerformScroll(7)" onMouseOut="CeaseScroll()"><img src="media/spacer_trans.gif" width="260" height="20" alt="" border="0" vspace="0" hspace="0"></a></div>
+
+<div id="divContainer"> 
+  <div id="divContent">
+  		<table border="0" width="260" cellpadding="0" cellspacing="0"><tr><td>
+		<script language="JavaScript" type="text/javascript">
+		<!--
+		if (NSv4)
+		{	
+			document.write('<span class="tdns">')
+		} else {	
+			document.write('<span class="tdie">')
+		}
+		//-->
+		</script>
+  		<b><font color="#006699">ZTL: Zion Technology Ltd</font></b>
+		<br /><br /><strong>ZTL</strong> is a brand new IT Solutions consultancy based in Nigeria - they just lost to sweden the the world cup after losing to Argentina in the opening game, now they are out. The company is the brain child of my cousin,  him and his bright ideas.
+		<br /><br />My job was to make a web site for the firm, try as much as possible to get his message across and hopefully get paid. Yes, hopefully, I guess you guys all know whenever you do stuff for family the freaks always want it for free.
+		<br /><br />More information about the web site is available on the web site it self, it is awaiting content so I've put loads of tempoary text there.
+		<br /><br />This is another web site where I've built the whole thing, all you see is mine, so if you find any errors please let me know. 
+		<br /><br />That's all for ZTL here, for more information see the web site itself, just click on the image above or the URL link on the main page above the thumb nail of this web site.
+		<br /><br />To shut this window click on anyway in the main window.
+		</span>
+		</td></tr></table>
+  </div>
+</div>
+<!-- end absolutely positioned scrollable area object -->
+
+<table border="0" cellpadding="0" cellspacing="0" width="300">
+<tr>
+	<td><img src="media/spacer_trans.gif" width="1" height="11" alt="" border="0"></td>
+</tr>
+<tr>
+	<td align="center"><img src="media3/ztl3.gif" width="260" height="158" alt="" border="0" hspace="0" vspace="0" onclick="luanchandshut('http://www.ztltd.com')"></td>
+</tr>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="300">
+<tr>
+	<td><img src="media/spacer_trans.gif" width="1" height="12" alt="" border="0"></td>
+</tr>
+<tr>
+	<td align="center"><img src="media3/smallwindow_up.gif" width="300" height="35" alt="" border="0"></td>
+</tr>
+<tr>
+	<td><img src="media/spacer_trans.gif" width="1" height="96" alt="" border="0"></td>
+</tr>
+<tr>
+	<td align="center"><img src="media3/smallwindow_down.gif" width="300" height="27" alt="" border="0"></td>
+</tr>
+</table>
+
+</body>
+</html>

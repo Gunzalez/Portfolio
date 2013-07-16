@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Untitled Document</title>
+    <script src="js/modernizr-latest.js"></script>
+</head>
+<body>
+
+	<button id="add-friend">Add Friend</button>
+    <ul id="friends-list">
+    </ul>
+    <div id="box"></div>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/underscore.js"></script>
+    <script src="js/backbone.js"></script>
+    <script type="text/javascript">
+		
+	/*
+	window.AppView = Backbone.View.extend({
+	el: $("body"),
+		events: {
+				"click #add-friend":  "showPrompt",
+			},
+		showPrompt: function () {
+				var friend_name = prompt("Who is your friend?");
+			}
+	});
+	var appview = new AppView;	
+	*/
+	
+	
+	
+	somefunc = function(){
+		
+		Person = Backbone.Model.extend({
+			defaults: {
+				name: 'Fetus',
+				age: 0,
+				child: 'Linda'
+			}
+		});
+		
+		PersonView = Backbone.View.extend({
+			tagName: 'article',
+			className: 'person',
+			render: function(){
+				this.$el.html(this.model.get('name'));
+				return this;
+			}
+		})
+		
+		var person = new Person({ name: "Thomas", age: 67});
+		var person2 = new Person({ name: "Edward", age: 2});
+		var person3 = new Person();
+		var person4 = new Person({ name: 'Martin', age: 11});
+		
+		Friends = Backbone.Collection.extend({
+			model: Person
+		});		
+		var friends = new Friends([person, person2, person3, person4]);
+		friends.on('add',function(){
+			friendsView.render();
+		})
+		
+		
+		FriendsView = Backbone.View.extend({			
+			el : $('#box'),
+			initialize: function(){
+				this.collection = friends;
+				this.render();
+			},
+			render: function(){
+				//this.$el.html( template );
+				var that = this;
+				$.each(this.collection.models, function(i){
+					var personView = new PersonView({
+						model: this.collection.models[i]
+					})
+					that.$el.append(personView.render().el)
+				})
+				return false;
+			}	
+		});
+		
+		friendsView = new FriendsView();
+	}
+
+	$(document).ready(function(){	
+		somefunc();
+	})
+
+    </script>
+</body>
+</html>

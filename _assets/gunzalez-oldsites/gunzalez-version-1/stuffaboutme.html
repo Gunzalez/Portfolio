@@ -1,0 +1,327 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>Gunzalez.co.uk</title>
+	
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="author" content="Gunzalez" />
+<meta name="date" content="October 2001, real late GMT" />
+<meta name="Keywords" content="Gunzalez" />
+<meta name="Description" content="Gunzalez's Online CV" />
+
+<script language="JavaScript" type="text/javascript">
+<!--
+// begin absolutely positioned scrollable area object scripts 
+// Extension developed by David G. Miles 
+// Original Scrollable Area code developed by Thomas Brattli 
+function verifyCompatibleBrowser(){ 
+    this.ver=navigator.appVersion 
+    this.dom=document.getElementById?1:0 
+    this.ie5=(this.ver.indexOf("MSIE 5")>-1 && this.dom)?1:0; 
+    this.ie4=(document.all && !this.dom)?1:0; 
+    this.ns5=(this.dom && parseInt(this.ver) >= 5) ?1:0; 
+ 
+    this.ns4=(document.layers && !this.dom)?1:0; 
+    this.bw=(this.ie5 || this.ie4 || this.ns4 || this.ns5) 
+    return this 
+} 
+bw=new verifyCompatibleBrowser() 
+ 
+ 
+var speed=50 
+ 
+var loop, timer 
+ 
+function ConstructObject(obj,nest){ 
+    nest=(!nest) ? '':'document.'+nest+'.' 
+    this.el=bw.dom?document.getElementById(obj):bw.ie4?document.all[obj]:bw.ns4?eval(nest+'document.'+obj):0; 
+    this.css=bw.dom?document.getElementById(obj).style:bw.ie4?document.all[obj].style:bw.ns4?eval(nest+'document.'+obj):0; 
+    this.scrollHeight=bw.ns4?this.css.document.height:this.el.offsetHeight 
+    this.clipHeight=bw.ns4?this.css.clip.height:this.el.offsetHeight 
+    this.up=MoveAreaUp;this.down=MoveAreaDown; 
+    this.MoveArea=MoveArea; this.x; this.y; 
+    this.obj = obj + "Object" 
+    eval(this.obj + "=this") 
+    return this 
+} 
+function MoveArea(x,y){ 
+    this.x=x;this.y=y 
+    this.css.left=this.x 
+    this.css.top=this.y 
+} 
+ 
+function MoveAreaDown(move){ 
+	if(this.y>-this.scrollHeight+objContainer.clipHeight){ 
+    this.MoveArea(0,this.y-move) 
+    if(loop) setTimeout(this.obj+".down("+move+")",speed) 
+	} 
+} 
+function MoveAreaUp(move){ 
+	if(this.y<0){ 
+    this.MoveArea(0,this.y-move) 
+    if(loop) setTimeout(this.obj+".up("+move+")",speed) 
+	} 
+} 
+ 
+function PerformScroll(speed){ 
+	if(initialised){ 
+		loop=true; 
+		if(speed>0) objScroller.down(speed) 
+		else objScroller.up(speed) 
+	} 
+} 
+ 
+function CeaseScroll(){ 
+    loop=false 
+    if(timer) clearTimeout(timer) 
+} 
+var initialised; 
+function InitialiseScrollableArea(){ 
+    objContainer=new ConstructObject('divContainer') 
+    objScroller=new ConstructObject('divContent','divContainer') 
+    objScroller.MoveArea(0,0) 
+    objContainer.css.visibility='visible' 
+    initialised=true; 
+} 
+// end absolutely positioned scrollable area object scripts
+// --> 
+</script>
+
+<script language="JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+// -->
+</script>
+
+<script language="JavaScript" src="js/window_status.js" type="text/javascript"></script>
+<script language="JavaScript" src="js/top_check.js" type="text/javascript"></script>
+<script language="JavaScript" src="js/browser_check.js" type="text/javascript"></script>
+<script language="JavaScript" src="js/image_swapper.js" type="text/javascript"></script>
+
+<!-- Preloading swapping images for this page //-->
+<script language="JavaScript" type="text/javascript">
+<!--
+if (document.images)	/* preloading images for this page */
+{
+	/* --------------------------------------------	start */	
+	/* Group images for navigation  --------------	start */
+	/* -------------------------------------------	start */
+	
+	sam = new Image;	
+	sam.src = "media/but_stuffaboutme_ov.gif";
+	sam_ov = new Image;
+	sam_ov.src = "media/but_stuffaboutme_ov.gif";
+	
+	wk = new Image;	
+	wk.src = "media/but_workexperience_off.gif";
+	wk_ov = new Image;
+	wk_ov.src = "media/but_workexperience_ov.gif";
+	
+	ss = new Image;	
+	ss.src = "media/but_someexamples_off.gif";
+	ss_ov = new Image;
+	ss_ov.src = "media/but_someexamples_ov.gif";
+	
+	dc = new Image;	
+	dc.src = "media/but_downloadcv_off.gif";
+	dc_ov = new Image;
+	dc_ov.src = "media/but_downloadcv_ov.gif";
+	
+	scrollup = new Image;	
+	scrollup.src = "media/but_mo_up_off.gif";
+	scrollup_ov = new Image;
+	scrollup_ov.src = "media/but_mo_up_ov.gif";
+	
+	scrolldown = new Image;	
+	scrolldown.src = "media/but_mo_down_off.gif";
+	scrolldown_ov = new Image;
+	scrolldown_ov.src = "media/but_mo_down_ov.gif";
+	
+	/* -----------------------------------------  end */	
+	/* Group images for navigation -------------  end */
+	/* -----------------------------------------  end */	
+}
+//-->
+</script>
+
+<script language="JavaScript" type="text/javascript">
+<!--
+function downloadcv(){
+	alert('working')
+}
+//-->
+</script>
+
+<!-- Linked .css files -->
+<script language="JavaScript" type="text/javascript">
+<!--
+if (NSv4)
+{
+	document.write('<link rel="stylesheet" type="text/css" href="css/stylesheet_NS4.css">')
+} else {
+	document.write('<link rel="stylesheet" type="text/css" href="css/stylesheet_IE.css">')
+}
+//-->
+</script>
+
+<script language="JavaScript" type="text/javascript">
+<!--
+function noRightClick() {
+	if (event.button==2) {
+		alert('Dya own damn coding!');
+	};
+};
+//document.onmousedown=noRightClick
+//-->
+</script>
+
+
+<style type="text/css">  
+#divControlz{position:absolute; width:269; left:270; top:328; z-index:1; text-align: right} 
+#divContainer{position:absolute; width:430; height:170; overflow:hidden; top:150; left:251; clip:rect(0,430,170,0); visibility:hidden} 
+#divContent{position:absolute; top:0; left:0} 
+</style>
+
+</head>
+<body background="media/bkground.gif" bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onLoad="InitialiseScrollableArea()">
+
+<!-- begin absolutely positioned scrollable area object-->
+<div id="divControlz">
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+	<td><img src="media/div_light.gif" width="3" height="23" alt="" border="0"></td>
+	<td align="center" width="130"><a href="javascript:;" 
+					onMouseOver="PerformScroll(7),displayStatusMsg('');return document.returnValue" 
+					onMouseOut="CeaseScroll()">
+					<img name="scrolldown" src="media/but_mo_down_off.gif" width="85" height="18" alt="" border="0" hspace="0" vspace="0"></a></td>
+	<td><img src="media/div_light.gif" width="3" height="23" alt="" border="0"></td>
+	<td align="center" width="130"><a href="javascript:;" 
+					onMouseOver="PerformScroll(-7),displayStatusMsg('');return document.returnValue"
+					onMouseOut="CeaseScroll()">
+					<img name="scrollup" src="media/but_mo_up_off.gif" width="85" height="18" alt="" border="0" hspace="0" vspace="0"></a></td>
+	<td><img src="media/div_light.gif" width="3" height="23" alt="" border="0"></td>
+</tr>
+</table>
+</div>
+
+<div id="divContainer"> 
+<div id="divContent">
+
+		<table width="430" cellspacing="0" cellpadding="1" border="0">
+		<tr>
+		    <td align="right" valign="top"><img src="media/a_point.gif" width="23" height="13" alt="" border="0" hspace="0" vspace="0"></td>
+		    <td valign="top" class="tdblue">Self Profile</td>
+		</tr>		
+		<tr>
+		    <td align="right" valign="top"><img src="media/a_point_2.gif" width="23" height="45" alt="" border="0" hspace="0" vspace="0"></td>
+		    <td valign="top">From a programming background but with a good eye for design, an electronic artist I'd like to say, but then I'd like to say a lot of things. Well, I do design and I do develop, skillset being in both client-side and server-side expertise.
+			<br /><br />Presently working in a permanent position with a reputable firm where I am an Intranet developer, a pretty good role for me right now.
+			<br /><br />This here little web site is just to show case my <a href="someexamples.html" class="reglink" onMouseOver="displayStatusMsg('');return document.returnValue">portfolio</a>, just stuff I've done in the past. It's rather old now I'll be updating it sometime soon, whenever that is.
+			<br /><br />One last thing, if you come across any errors on this site, and there are probably loads, and if you have the time, please let me know at <a href="mailto:gunzalez@hotmail.com?subject=Saw your site, it sucks!" class="reglink" onMouseOver="displayStatusMsg('');return document.returnValue">gunzalez@hotmail.com</a>, it'll be most appreciated, cheers for your time.</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td valign="top" class="notes" align="right"><br />Last updated: 08.04.03</td>
+		</tr>
+		<tr>
+			<td colspan="2"><img src="media/spacer_trans.gif" width="1" height="25" alt="" border="0"></td>	
+		</tr>
+		<tr>
+		    <td align="right" valign="top"><img src="media/a_point.gif" width="23" height="13" alt="" border="0" hspace="0" vspace="0"></td>
+		    <td valign="top" class="tdblue">Education</td>
+		</tr>   			
+		<tr>
+		    <td align="right" valign="top"><img src="media/a_point_2.gif" width="23" height="45" alt="" border="0" hspace="0" vspace="0"></td>
+		    <td valign="top">1995.1998<br />
+						<strong>BSc (Hons) BIS - Business Information Systems</strong><br />
+						University of North London, 166-220 Holloway Road, London, N7 8DB.<br />
+						<a href="http://www.unl.ac.uk/" target="_blank" class="reglink" onMouseover="displayStatusMsg('');return document.returnValue">http://www.unl.ac.uk/</a></td>
+		</tr>
+		<tr>
+			<td colspan="2"><img src="media/spacer_trans.gif" width="1" height="8" alt="" border="0"></td>	
+		</tr>
+		<tr>
+		    <td align="right" valign="top"><img src="media/a_point_2.gif" width="23" height="45" alt="" border="0" hspace="0" vspace="0"></td>		    
+          	<td valign="top">1994.1995<br />
+						<strong>Access to Computing</strong><br />
+						City and Islington College, 444 Camden Road Site. London N4 6FG.<br />
+						<a href="http://www.candi.ac.uk/" target="_blank" class="reglink" onMouseover="displayStatusMsg('');return document.returnValue">http://www.candi.ac.uk/</a></td>
+		</tr>
+		<tr>
+			<td colspan="2"><img src="media/spacer_trans.gif" width="1" height="8" alt="" border="0"></td>	
+		</tr>
+		</table>
+</div>
+</div>
+<!-- end absolutely positioned scrollable area object -->
+
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+	<td valign="top">
+	
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td valign="top"><img src="media/1_new_concept_header.gif" width="535" height="65" alt="" border="0" vspace="0" hspace="0"></td>
+			</tr>
+			<tr>
+				<td valign="top"><img src="media/spacer_trans.gif" width="1" height="9" alt="" border="0" vspace="0" hspace="0"></td>
+			</tr>
+			<tr>
+				<td valign="top">
+				
+					<table border="0" cellpadding="0" cellspacing="0">
+					<tr>
+						<td><img src="media/div_dark_end.gif" width="4" height="18" alt="" border="0" vspace="0" hspace="0"></td>
+						<td><a href="stuffaboutme.html" target="_self" 
+							onMouseOver="swapImage('sam','sam_ov'),displayStatusMsg('');return document.returnValue" 						
+							onMouseOut="swapImage('sam','sam'),displayStatusMsg('');return document.returnValue">
+							<img name="sam" src="media/but_stuffaboutme_ov.gif" width="130" height="18" alt="" border="0"></a></td>
+						<td><img src="media/div_dark.gif" width="6" height="18" alt="" border="0"></td>
+						<td><a href="workexperience.html" target="_self" 
+							onMouseOver="swapImage('wk','wk_ov'),displayStatusMsg('');return document.returnValue" 						
+							onMouseOut="swapImage('wk','wk'),displayStatusMsg('');return document.returnValue">
+							<img name="wk" src="media/but_workexperience_off.gif" width="130" height="18" alt="" border="0"></a></td>
+						<td><img src="media/div_dark.gif" width="6" height="18" alt="" border="0"></td>
+						<td><a href="someexamples.html" target="_self" 
+							onMouseOver="swapImage('ss','ss_ov'),displayStatusMsg('');return document.returnValue" 						
+							onMouseOut="swapImage('ss','ss'),displayStatusMsg('');return document.returnValue">
+							<img name="ss" src="media/but_someexamples_off.gif" width="130" height="18" alt="" border="0"></a></td>
+						<td><img src="media/div_dark.gif" width="6" height="18" alt="" border="0"></td>
+						<td><a href="javascript:alert('Email gunzalez@hotmail.com');"
+							onMouseOver="swapImage('dc','dc_ov'),displayStatusMsg('');return document.returnValue" 						
+							onMouseOut="swapImage('dc','dc'),displayStatusMsg('');return document.returnValue">
+							<img name="dc" src="media/but_downloadcv_off.gif" width="130" height="18" alt="" border="0"></a></td>
+						<td><img src="media/div_dark_end.gif" width="4" height="18" alt="" border="0" vspace="0" hspace="0"></td>
+					</tr>
+					</table>
+				
+				</td>
+			</tr>
+			<tr>
+				<td valign="top"><img src="media/spacer_trans.gif" width="1" height="25" alt="" border="0" vspace="0" hspace="0"></td>
+			</tr>
+			<tr>
+				<td valign="top"><img src="media/1_new_concept_sam.gif" width="201" height="261" alt="" border="0" vspace="0" hspace="0"></td>
+			</tr>
+			</table>	
+	
+	</td>
+	<td valign="top"><script language="JavaScript" type="text/javascript">
+					<!--
+							if (document.images){
+								document.write(randImage2(5,'new_concept_sam2',198,155))									 
+							} else {
+							null;
+							}
+					 //-->
+					 </script></td>
+	</tr>
+	</table>
+</body>
+</html>

@@ -1,0 +1,54 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:x-small;
+	color:#ffffff;
+	} 
+html>body { font-size: x-small; }
+body#homepage { background:#330000 url(../images/repeated_bg.jpg) top left repeat-y; }
+
+/* -- POSITIONING -- */
+#mainBGDiv { position:absolute; left:0; top:0; }
+#contentDiv { position:absolute; left:50px; top:46px; z-index:200px; width:500px; padding-bottom:20px; }
+
+.productDiv { padding:7px 0 0 0; margin:0 0 20px 0; border-top:1px dotted #fff; }
+.productDiv p { padding:0; margin:0; font-size:100%; padding-bottom:7px; font-size:0.85em; }
+.productDiv p.nopadding { margin:0; padding:0; }
+.paddedimage { padding-bottom:7px; }
+
+.productDiv ul#largeLi { margin:0; padding:0; list-style: none; height:472px; }
+
+.productDiv ul#largeLi2 { margin:0; padding:0; list-style: height: 276px; }
+.productDiv ul#largeLi.hs2 { height: 200px; }
+
+.productDiv ul#largeLi li { margin:0 10px 10px 0; padding:0; float: left; display: block; height: 226px; }
+.productDiv ul#largeLi li.rowend { margin-right:0; }
+
+.productDiv ul#largeLi2 li { margin:0 10px 10px 0; padding:0; float: left; display: block; height: 226px; }
+.productDiv ul#largeLi2 li.rowend { margin-right:0; }
+
+.productDiv ul#simpleLi  { margin:0; padding:0; list-style: none;  }
+.productDiv ul#simpleLi li { margin:0; padding:0; }
+
+/* -- SPECIALS -- */
+.yellowtext { color:#fc0; font-size:1.1em; }
+.whitetext { font-size:0.9em; }
+.yellowtext a { color:#fc0; font-size:1.0em; }
+.redtext { color:#f30; }
+.sup { font-size:0.60em; }
+.bttop { text-transform:uppercase;}
+p.bttop a { color:#f30; font-family: Verdana, Arial, Helvetica, sans-serif; text-decoration:none; font-size:0.90em;  }
+p.bttop a:hover  { text-decoration:underline; }
+#mainForm { margin-bottom:20px; font-family: Verdana, Arial, Helvetica, sans-serif;  }
+img { border:0; }
+#topDiv p.topDivPara { text-transform:uppercase; padding-top:20px; }
+h2, h1 { margin:0; padding:0; }
+a { color:#fff; }
+a:hover { text-decoration:none; }
+label { color:#f30; font-size:9px; display:block; margin-bottom:3px; text-transform:uppercase; } 
+select { font-size:10px; width:200px; text-transform:uppercase; font-family: Verdana, Arial, Helvetica, sans-serif; }
+
+/* -- ESCAPE --*/
+#tableescape { margin-bottom:10px; }
+.tdescape { padding-right:10px; }

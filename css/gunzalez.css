@@ -1,0 +1,260 @@
+/* CSS Document */
+
+body {
+	margin: 0;
+	padding: 0;
+	background: url(../images/bg.jpg) 0 0;
+	color: #fff;
+}
+
+/* font */
+@font-face {
+    font-family: 'baffledregular';
+    src: url('baffled-regular-webfont.eot');
+    src: url('baffled-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('baffled-regular-webfont.woff') format('woff'),
+         url('baffled-regular-webfont.ttf') format('truetype'),
+         url('baffled-regular-webfont.svg#baffledregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+h1 {
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'baffledregular';
+	margin: 0;
+	padding: 35px 0 15px 0;
+	font-size: 65px;
+	text-shadow: 0px 1px 1px #4d4d4d;
+	color: #fff;
+}
+
+h2 {
+	text-align: center;
+	font-family: Tahoma, Geneva, sans-serif;
+	margin: 0;
+	padding: 0 0 45px 0;
+	font-weight: normal;
+	font-size: 25px;
+}
+
+.data h3 {
+	text-align: left;
+	font-family: 'baffledregular';
+	margin: 0;
+	padding: 30px 0 25px 30px;
+	font-weight: normal;
+	font-size: 26px;
+}
+
+.data p {
+	text-align: left;
+	font-family: Tahoma, Geneva, sans-serif;
+	margin: 0;
+	padding: 0 30px 15px 30px;
+	font-weight: normal;
+	font-size: 15px;
+}
+
+.data a {
+	padding-left: 30px;
+	font-size: 14px;
+	text-decoration: none;
+	color: #f8c301;
+	font-family: Tahoma, Geneva, sans-serif;	
+}
+
+.data a:hover {
+	text-decoration: underline;	
+}
+
+
+#projects {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.left-col,
+.right-col {
+	width: 50%;
+	float: left;
+}
+
+#projects .col {
+	width: 50%;
+	float: left;
+}
+
+.project {
+	float: left;
+	width: 100%;
+	position: relative;
+	overflow: hidden;	
+}
+
+.project img {
+	width: 100%;
+	display: block;
+	border: none;
+}
+
+.project > a {
+	display: block;
+	cursor: default;
+}
+
+.project .data {
+	display: none;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.all {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #000;
+	opacity: 0;
+	filter:alpha(opacity=0); /* For IE8 and earlier */	
+	cursor: pointer;
+}
+
+#overlay {
+	background-color: #000;
+	/*	
+	opacity: 0.8;
+	filter:alpha(opacity=80); /* For IE8 and earlier * /  
+	*/
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.9);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	display: none;
+}
+
+#overlay .content {
+	margin: 0 auto;
+	position: relative;
+	margin-top: 40px;
+}
+
+#overlay .content img {
+	border: 1px solid #fff;
+}
+
+.bg { background-color: #000; }
+
+
+.footer {
+	margin: 0 auto;
+	width: 480px;
+	padding-bottom: 72px;
+	margin-top: 50px;
+}
+
+.footer ul {
+	float: left;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.footer ul li {
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+.footer ul li a {
+	display: block;
+	padding: 30px 0;
+	color: #999;
+	font-family: 'baffledregular';
+	text-decoration: none;
+	font-size: 40px;
+	width: 120px;
+	text-align: center;
+}
+
+.footer ul li a:hover {
+	background-color: #000;
+	color: #fff;
+}
+
+.js .footer {
+	visibility: hidden;
+}
+
+
+.project .top,
+.project .bottom {
+	position: absolute;
+	opacity: 0.8;
+	filter:alpha(opacity=80); /* For IE8 and earlier */	
+	background-color: #000;
+}
+
+ 
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+	#projects {
+		width: 320px;
+	}
+	.footer {
+		width:120px;
+	}
+}
+ 
+ 
+/* Desktops and laptops ----------- */
+@media only screen
+and (max-width : 980px) {
+/* Styles */
+	.left-col,
+	.right-col {
+		width: 100%;
+	}
+	
+	#projects .col {
+		width: 50%;
+	}
+}
+ 
+/* Desktops and laptops ----------- */
+@media only screen
+and (max-width : 480px) {
+/* Styles */	
+	#projects .col {
+		width: 100%;
+	}
+	.footer {
+		width:240px;
+	}
+}
+ 
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1920px) {
+	#projects {
+		width: 1920px;
+	}
+}
+
+#projects-list {
+	display: none;
+}
+
+
+
+
+
+/* sk */
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
